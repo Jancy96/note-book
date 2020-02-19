@@ -8,16 +8,10 @@
         <tab-line />
       </el-main>
     </el-container>
-    <div class="side-tool">
+    <div class="side-tool" v-if="btnFlag">
       <ul>
-        <li
-          data-placement="left"
-          data-toggle="tooltip"
-          data-container="body"
-          data-original-title="回到顶部"
-          style
-        >
-          <a class="function-button">
+        <li>
+          <a class="function-button" @click="backTop()">
             <i class="el-icon-arrow-up"></i>
           </a>
         </li>
@@ -36,8 +30,33 @@ export default {
     HeadNav,
     TabLine
   },
+  data() {
+    return {
+      btnFlag: true
+    };
+  },
   props: {
     // msg: String
+  },
+  methods: {
+    backTop() {
+      let id = setInterval(function() {
+        var current = document.documentElement.scrollTop // 取得当前滚动的距离
+          ? document.documentElement.scrollTop
+          : document.body.scrollTop;
+        if (current === 0) {
+          clearInterval(id); // 当滚动距离为0 的时候，要清除这个间隔函数
+        }
+        document.documentElement.scrollTop = current - 100; // 形成一个慢慢过渡到0 的过程
+        document.body.scrollTop = current - 100; // 写两个是为了兼容
+      }, 16);
+    }
+  },
+  mounted() {
+    window.addEventListener("scroll", this.scrollToTop);
+  },
+  destroyed() {
+    window.removeEventListener("scroll", this.scrollToTop);
   }
 };
 </script>

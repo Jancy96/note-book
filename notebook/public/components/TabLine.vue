@@ -1,8 +1,8 @@
 <template>
   <div class="container index">
     <div id="list-container">
-      <ul class="note-list" infinite-scroll-url="/">
-        <li id="note-40430612" data-note-id="40430612" class>
+      <ul class="note-list">
+        <li id="note-40430612" class>
           <div class="content">
             <a class="title" target="_blank" href="/p/76f8522de131">《三生三世十里桃花》东凤续写三――花楼调情</a>
             <p class="abstract">花楼调情 然后东华拿了桌上的书本走出去了。女夫子邪魅一笑也跟着出去了。 凤九浅笑着把灰狼弟弟的爪子拿下去了，眼神黯然，：“老弟，姐...</p>
@@ -19,7 +19,58 @@
             </div>
           </div>
         </li>
-        <li id="note-40430612" data-note-id="40430612" class>
+        <li id="note-40430612" class>
+          <div class="content">
+            <a class="title" target="_blank" href="/p/76f8522de131">《三生三世十里桃花》东凤续写三――花楼调情</a>
+            <p class="abstract">花楼调情 然后东华拿了桌上的书本走出去了。女夫子邪魅一笑也跟着出去了。 凤九浅笑着把灰狼弟弟的爪子拿下去了，眼神黯然，：“老弟，姐...</p>
+            <div class="meta">
+              <a target="_blank" href="/u/b84d2ab3ecf9" class="nickname">轻相思</a>
+              <a target="_blank" href="/p/76f8522de131#comments" class="comments">
+                <i class="iconfont ic-list-comments">&#xe629;</i>
+                <span class="comments-num">15</span>
+              </a>
+              <span class="like">
+                <i class="iconfont ic-list-like">&#xe611;</i>
+                <span class="like-num">17</span>
+              </span>
+            </div>
+          </div>
+        </li>
+        <li id="note-40430612" class>
+          <div class="content">
+            <a class="title" target="_blank" href="/p/76f8522de131">《三生三世十里桃花》东凤续写三――花楼调情</a>
+            <p class="abstract">花楼调情 然后东华拿了桌上的书本走出去了。女夫子邪魅一笑也跟着出去了。 凤九浅笑着把灰狼弟弟的爪子拿下去了，眼神黯然，：“老弟，姐...</p>
+            <div class="meta">
+              <a target="_blank" href="/u/b84d2ab3ecf9" class="nickname">轻相思</a>
+              <a target="_blank" href="/p/76f8522de131#comments" class="comments">
+                <i class="iconfont ic-list-comments">&#xe629;</i>
+                <span class="comments-num">15</span>
+              </a>
+              <span class="like">
+                <i class="iconfont ic-list-like">&#xe611;</i>
+                <span class="like-num">17</span>
+              </span>
+            </div>
+          </div>
+        </li>
+        <li id="note-40430612" class>
+          <div class="content">
+            <a class="title" target="_blank" href="/p/76f8522de131">《三生三世十里桃花》东凤续写三――花楼调情</a>
+            <p class="abstract">花楼调情 然后东华拿了桌上的书本走出去了。女夫子邪魅一笑也跟着出去了。 凤九浅笑着把灰狼弟弟的爪子拿下去了，眼神黯然，：“老弟，姐...</p>
+            <div class="meta">
+              <a target="_blank" href="/u/b84d2ab3ecf9" class="nickname">轻相思</a>
+              <a target="_blank" href="/p/76f8522de131#comments" class="comments">
+                <i class="iconfont ic-list-comments">&#xe629;</i>
+                <span class="comments-num">15</span>
+              </a>
+              <span class="like">
+                <i class="iconfont ic-list-like">&#xe611;</i>
+                <span class="like-num">17</span>
+              </span>
+            </div>
+          </div>
+        </li>
+        <li id="note-40430612" class>
           <div class="content">
             <a class="title" target="_blank" href="/p/76f8522de131">《三生三世十里桃花》东凤续写三――花楼调情</a>
             <p class="abstract">花楼调情 然后东华拿了桌上的书本走出去了。女夫子邪魅一笑也跟着出去了。 凤九浅笑着把灰狼弟弟的爪子拿下去了，眼神黯然，：“老弟，姐...</p>
@@ -130,16 +181,6 @@ export default {
   color: #fff;
   background-color: #a5a5a5;
   display: block;
-}
-@font-face {
-  font-family: "iconfont"; /* project id 1625496 */
-  src: url("//at.alicdn.com/t/font_1625496_o5u8awqeed.eot");
-  src: url("//at.alicdn.com/t/font_1625496_o5u8awqeed.eot?#iefix")
-      format("embedded-opentype"),
-    url("//at.alicdn.com/t/font_1625496_o5u8awqeed.woff2") format("woff2"),
-    url("//at.alicdn.com/t/font_1625496_o5u8awqeed.woff") format("woff"),
-    url("//at.alicdn.com/t/font_1625496_o5u8awqeed.ttf") format("truetype"),
-    url("//at.alicdn.com/t/font_1625496_o5u8awqeed.svg#iconfont") format("svg");
 }
 .iconfont {
   font-family: "iconfont" !important;

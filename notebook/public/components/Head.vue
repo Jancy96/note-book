@@ -40,13 +40,13 @@
       </a>
       <div v-if="isLogin" class="user">
         <div data-hover="dropdown">
-          <a class="avatar" href="/u/0738d1ff197b">
+          <a class="avatar">
             <img src="../../src/assets/images/user/default_avatar.jpg" alt="avatar" />
           </a>
         </div>
         <ul class="dropdown-menu">
           <li>
-            <a href="/u/0738d1ff197b">
+            <a>
               <i class="iconfont ic-navigation-profile"></i>
               <span>我的主页</span>
             </a>
@@ -76,7 +76,7 @@
             </a>
           </li>
           <li>
-            <a rel="nofollow" data-method="delete" href="/sign_out">
+            <a href="/sign_out">
               <i class="iconfont ic-navigation-signout"></i>
               <span>退出</span>
             </a>
@@ -84,8 +84,12 @@
         </ul>
       </div>
       <div v-if="!isLogin" class="visitor">
-        <router-link to="/login">登录</router-link>
-        <router-link to="/login">注册</router-link>
+        <router-link to="/login">
+          <a class="btn log-in" id="sign_in">登录</a>
+        </router-link>
+        <router-link to="/register">
+          <a class="btn sign-up" id="sign_up">注册</a>
+        </router-link>
       </div>
     </div>
   </nav>
@@ -95,7 +99,9 @@
 export default {
   name: "head-nav",
   props: {
-    isLogin: Boolean
+    isLogin: {
+      default: false
+    }
   }
 };
 </script>
@@ -304,17 +310,6 @@ nav .write-btn:focus,
 nav .write-btn:hover {
   color: #fff;
   background-color: #ec6149;
-}
-
-@font-face {
-  font-family: "iconfont"; /* project id 1625496 */
-  src: url("//at.alicdn.com/t/font_1625496_lcjemzlnk4.eot");
-  src: url("//at.alicdn.com/t/font_1625496_lcjemzlnk4.eot?#iefix")
-      format("embedded-opentype"),
-    url("//at.alicdn.com/t/font_1625496_lcjemzlnk4.woff2") format("woff2"),
-    url("//at.alicdn.com/t/font_1625496_lcjemzlnk4.woff") format("woff"),
-    url("//at.alicdn.com/t/font_1625496_lcjemzlnk4.ttf") format("truetype"),
-    url("//at.alicdn.com/t/font_1625496_lcjemzlnk4.svg#iconfont") format("svg");
 }
 
 .iconfont {

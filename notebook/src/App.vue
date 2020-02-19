@@ -1,7 +1,5 @@
 <template>
   <div id="app">
-    <Home />
-    <!-- <router-view class="Router" /> -->
     <router-view></router-view>
   </div>
 </template>
@@ -18,7 +16,7 @@ export default {
 </script>
 
 <style>
-@import url('./assets/common.css');
+@import url('./assets/css/common.css');
 /* #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
